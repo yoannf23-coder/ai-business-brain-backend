@@ -30,8 +30,11 @@ CONFIG_PATH = ROOT / "site.config.json"
 def load_env():
     env_file = ROOT / ".env"
     if not env_file.exists():
+        print(f"Aucun fichier .env dans {ROOT} — lecture des variables d'environnement.")
         return
-    for line in env_file.read_text().splitlines():
+    # utf-8-sig : le Bloc-notes et PowerShell écrivent un BOM en tête de fichier,
+    # qui collerait sinon à la première clé et la rendrait illisible.
+    for line in env_file.read_text(encoding="utf-8-sig").splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
