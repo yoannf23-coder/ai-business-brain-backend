@@ -3,6 +3,12 @@
 Outil en Python (sans dépendance externe) qui crée et met à jour un site vitrine
 WordPress à partir d'un seul fichier de configuration : `site.config.json`.
 
+Le contenu livré est celui du **Comptoir NDRC**, magasin pédagogique tenu par les
+étudiants : accueil, produits, présentation du magasin, infos pratiques, contact
+et mentions légales. Les informations que seul l'établissement connaît (horaires,
+adresse, email) sont laissées entre crochets, `[COMME CECI]` — les remplacer avant
+de publier.
+
 Il pilote un WordPress **déjà installé et accessible en ligne**, via l'API REST
 (`/wp-json`). Rien n'est installé sur le serveur.
 
@@ -95,6 +101,7 @@ mais non affiché : il suffit de l'assigner dans **Apparence → Menus**.
 |------------|----------------------------------------------------|-------|
 | `hero`     | `title`, `subtitle`, `button {label, url}`         | bandeau pleine largeur centré |
 | `text`     | `title`, `paragraphs[]`                            | titre + paragraphes |
+| `list`     | `title`, `intro`, `items[]`                        | liste à puces |
 | `features` | `title`, `items[] {title, text}`                   | colonnes côte à côte |
 | `cta`      | `title`, `text`, `button {label, url}`             | appel à l'action centré |
 | `contact`  | `title`, `email`, `phone`, `address`, `note`       | coordonnées en liste |

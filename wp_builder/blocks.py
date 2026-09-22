@@ -94,6 +94,21 @@ def features(section):
     )
 
 
+def listing(section):
+    parts = []
+    if section.get("title"):
+        parts.append(_heading(section["title"]))
+    if section.get("intro"):
+        parts.append(_paragraph(section["intro"]))
+    items = "\n".join(f"<li>{esc(item)}</li>" for item in section["items"])
+    parts.append(
+        '<!-- wp:list -->\n<ul class="wp-block-list">\n'
+        + items
+        + "\n</ul>\n<!-- /wp:list -->"
+    )
+    return "\n\n".join(parts)
+
+
 def cta(section):
     parts = [_heading(section["title"], align="center")]
     if section.get("text"):
@@ -125,6 +140,7 @@ def contact(section):
 RENDERERS = {
     "hero": hero,
     "text": text,
+    "list": listing,
     "features": features,
     "cta": cta,
     "contact": contact,

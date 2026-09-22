@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Nom de l'entreprise",
-    "description": "Votre slogan en une ligne",
+    "title": "Le Comptoir NDRC",
+    "description": "Le magasin pédagogique tenu par les étudiants de BTS NDRC",
     "front_page_slug": "accueil",
     "posts_page_slug": null
   },
   "menu": {
     "name": "Menu principal",
     "location": "primary",
-    "items": ["accueil", "services", "a-propos", "contact"]
+    "items": ["accueil", "nos-produits", "le-magasin", "infos-pratiques", "contact"]
   },
   "pages": [
     {
@@ -17,59 +17,180 @@
       "sections": [
         {
           "type": "hero",
-          "title": "Nom de l'entreprise",
-          "subtitle": "Ce que vous faites, pour qui, et pourquoi ça compte — en une phrase.",
-          "button": { "label": "Nous contacter", "url": "/contact" }
+          "title": "Le Comptoir NDRC",
+          "subtitle": "Un vrai magasin, tenu par les étudiants de BTS NDRC. Fournitures, boissons et goodies de l'établissement, sur place et à prix étudiant.",
+          "button": { "label": "Voir nos produits", "url": "/nos-produits" }
+        },
+        {
+          "type": "text",
+          "title": "Une boutique qui sert de salle de cours",
+          "paragraphs": [
+            "Le Comptoir est le magasin pédagogique de [NOM DE L'ÉTABLISSEMENT]. Il est ouvert à tous les élèves, étudiants et personnels, et il fonctionne comme n'importe quel commerce : un assortiment, des prix, une caisse, des stocks à surveiller et des clients à satisfaire.",
+            "La différence tient à qui se trouve derrière le comptoir. Chaque ouverture est assurée par les étudiants de BTS Négociation et Digitalisation de la Relation Client, qui y appliquent en conditions réelles ce qu'ils étudient en cours : choisir les produits, négocier avec les fournisseurs, organiser le rayon, conseiller, encaisser et analyser les ventes."
+          ]
         },
         {
           "type": "features",
-          "title": "Ce que nous faisons",
+          "title": "Trois bonnes raisons de pousser la porte",
           "items": [
-            { "title": "Service 1", "text": "Décrivez le bénéfice concret pour le client." },
-            { "title": "Service 2", "text": "Décrivez le bénéfice concret pour le client." },
-            { "title": "Service 3", "text": "Décrivez le bénéfice concret pour le client." }
+            {
+              "title": "Des prix étudiants",
+              "text": "Le magasin ne cherche pas le profit. Les marges couvrent le réassort et le matériel, ce qui permet de rester nettement sous les tarifs des distributeurs automatiques et des commerces du quartier."
+            },
+            {
+              "title": "À deux pas de votre salle",
+              "text": "Plus besoin de sortir de l'établissement pour un stylo oublié ou une bouteille d'eau avant un partiel. Le Comptoir est ouvert sur les temps de pause, au cœur du bâtiment."
+            },
+            {
+              "title": "Vos retours comptent vraiment",
+              "text": "Une référence vous manque ? Dites-le-nous. Les demandes des clients sont relevées à chaque ouverture et pèsent directement sur l'assortiment du mois suivant : c'est aussi là-dessus que les étudiants sont évalués."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Horaires d'ouverture",
+          "intro": "Le magasin ouvre pendant les périodes de cours, hors vacances scolaires et périodes de stage.",
+          "items": [
+            "Lundi : [HORAIRES]",
+            "Mardi : [HORAIRES]",
+            "Jeudi : [HORAIRES]",
+            "Vendredi : [HORAIRES]",
+            "Fermé le mercredi, pendant les vacances scolaires et les périodes de stage"
           ]
         },
         {
           "type": "cta",
-          "title": "Parlons de votre projet",
-          "text": "Réponse sous 24 h, sans engagement.",
-          "button": { "label": "Demander un devis", "url": "/contact" }
+          "title": "Un besoin pour votre classe ou votre service ?",
+          "text": "Commandes groupées, fournitures pour un projet, boissons pour un événement : nous établissons un devis et nous nous chargeons de l'approvisionnement.",
+          "button": { "label": "Nous écrire", "url": "/contact" }
         }
       ]
     },
     {
-      "slug": "services",
-      "title": "Services",
+      "slug": "nos-produits",
+      "title": "Nos produits",
       "sections": [
         {
           "type": "text",
-          "title": "Nos prestations",
+          "title": "L'assortiment",
           "paragraphs": [
-            "Présentez ici votre offre, la méthode de travail et ce qui vous différencie."
+            "L'offre est volontairement resserrée : une centaine de références choisies pour couvrir les besoins réels d'une journée de cours, sans immobiliser de stock inutile. Elle évolue chaque trimestre en fonction des ventes et de vos demandes."
           ]
         },
         {
           "type": "features",
           "items": [
-            { "title": "Prestation A", "text": "Ce que ça inclut, pour quel type de client." },
-            { "title": "Prestation B", "text": "Ce que ça inclut, pour quel type de client." },
-            { "title": "Prestation C", "text": "Ce que ça inclut, pour quel type de client." }
+            {
+              "title": "Fournitures scolaires",
+              "text": "Stylos, surligneurs, copies simples et doubles, blocs, pochettes, clés USB, piles et calculatrices. De quoi dépanner un oubli comme équiper une année entière."
+            },
+            {
+              "title": "Boissons et snacks",
+              "text": "Eau, sodas, jus, cafés et thés, barres céréalières, biscuits et confiseries. Une sélection sans alcool ni boisson énergisante, conformément au règlement intérieur."
+            },
+            {
+              "title": "Goodies de l'établissement",
+              "text": "Tote bags, mugs, sweats et stickers aux couleurs de l'établissement. Conçus et commandés par les étudiants, ils servent aussi de support aux projets de communication de la promotion."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Bon à savoir",
+          "items": [
+            "Paiement accepté : [ESPÈCES / CARTE / AUTRE — à compléter]",
+            "Les prix affichés en rayon sont les prix définitifs, taxes comprises",
+            "Une référence en rupture est recommandée sous une semaine en moyenne",
+            "Les produits frais ne sont pas proposés, faute de chaîne du froid sur place"
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Vous cherchez un produit que nous n'avons pas ?",
+          "text": "Signalez-le à l'équipe en magasin ou par message. Chaque demande est étudiée lors de la réunion d'approvisionnement hebdomadaire.",
+          "button": { "label": "Faire une demande", "url": "/contact" }
+        }
+      ]
+    },
+    {
+      "slug": "le-magasin",
+      "title": "Le magasin",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Apprendre le commerce en le pratiquant",
+          "paragraphs": [
+            "Un magasin pédagogique est un commerce réel installé dans un établissement scolaire et confié aux étudiants. Ici, rien n'est simulé : les fournisseurs sont de vrais fournisseurs, les stocks de vrais stocks, et un rayon mal achalandé se traduit immédiatement par une vente perdue.",
+            "Le Comptoir prolonge les enseignements du BTS NDRC. Ce que les étudiants travaillent en atelier — la relation client, la négociation, l'animation commerciale, l'exploitation des données de vente — se joue chaque semaine derrière le comptoir, devant des clients qui ne sont pas des camarades jouant un rôle."
+          ]
+        },
+        {
+          "type": "features",
+          "title": "Qui fait quoi",
+          "items": [
+            {
+              "title": "Pôle achats et stocks",
+              "text": "Sélection des références, contact et négociation avec les fournisseurs, passation des commandes, réception et inventaires. C'est ce pôle qui décide de ce qui entre en rayon."
+            },
+            {
+              "title": "Pôle vente et relation client",
+              "text": "Ouverture du magasin, accueil, conseil, encaissement et tenue du rayon. Les réclamations et les demandes de produits y sont enregistrées puis transmises aux achats."
+            },
+            {
+              "title": "Pôle communication et digital",
+              "text": "Animation de ce site et des réseaux sociaux, affichage en magasin, opérations commerciales lors des temps forts de l'année, suivi des indicateurs de vente."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Encadrement et organisation",
+          "paragraphs": [
+            "Les étudiants tournent sur les trois pôles au fil de l'année, de façon à ce que chacun passe par l'ensemble des fonctions d'un point de vente. Le magasin est encadré par l'équipe pédagogique de la section, qui valide les commandes et supervise la gestion de caisse.",
+            "Les résultats du magasin — chiffre d'affaires, rotation des stocks, satisfaction client — sont analysés en classe et servent de base aux évaluations. Acheter au Comptoir, c'est donc contribuer directement à la formation de la promotion."
           ]
         }
       ]
     },
     {
-      "slug": "a-propos",
-      "title": "À propos",
+      "slug": "infos-pratiques",
+      "title": "Infos pratiques",
       "sections": [
         {
-          "type": "text",
-          "title": "Qui sommes-nous",
-          "paragraphs": [
-            "L'histoire de l'entreprise, sa mission, les personnes derrière.",
-            "Ajoutez ici les chiffres clés, années d'expérience, références."
+          "type": "list",
+          "title": "Nous trouver",
+          "intro": "Le magasin se situe à l'intérieur de l'établissement et n'est accessible qu'aux personnes autorisées à y entrer.",
+          "items": [
+            "Adresse : [ADRESSE DE L'ÉTABLISSEMENT]",
+            "Emplacement : [BÂTIMENT / SALLE]",
+            "Accès : réservé aux élèves, étudiants et personnels de l'établissement"
           ]
+        },
+        {
+          "type": "list",
+          "title": "Horaires",
+          "items": [
+            "Lundi : [HORAIRES]",
+            "Mardi : [HORAIRES]",
+            "Jeudi : [HORAIRES]",
+            "Vendredi : [HORAIRES]",
+            "Fermé le mercredi, pendant les vacances scolaires et les périodes de stage"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Commandes groupées",
+          "paragraphs": [
+            "Les classes, associations et services de l'établissement peuvent passer commande en dehors de l'assortiment habituel : fournitures pour un projet, boissons pour un événement, textiles personnalisés pour une promotion.",
+            "Comptez une semaine entre la demande et la livraison, selon les délais de nos fournisseurs. Un devis est établi avant toute commande ; adressez votre demande par message en précisant les quantités et la date à laquelle vous en avez besoin."
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Une question sur une commande ?",
+          "text": "L'équipe répond aux messages sous deux jours ouvrés pendant les périodes de cours.",
+          "button": { "label": "Contacter le magasin", "url": "/contact" }
         }
       ]
     },
@@ -78,12 +199,28 @@
       "title": "Contact",
       "sections": [
         {
-          "type": "contact",
+          "type": "text",
           "title": "Nous écrire",
-          "email": "contact@example.com",
-          "phone": "+33 0 00 00 00 00",
-          "address": "Adresse, Code postal Ville",
-          "note": "Vous pouvez aussi remplir le formulaire ci-dessous."
+          "paragraphs": [
+            "Une demande de produit, une commande groupée, une réclamation ou une question sur le fonctionnement du magasin : l'équipe étudiante lit les messages et y répond sous deux jours ouvrés pendant les périodes de cours."
+          ]
+        },
+        {
+          "type": "contact",
+          "email": "[EMAIL DU MAGASIN]",
+          "phone": "[TÉLÉPHONE — facultatif]",
+          "address": "[ADRESSE DE L'ÉTABLISSEMENT]",
+          "note": "Le plus simple reste de passer nous voir directement pendant les heures d'ouverture : les demandes formulées en magasin sont traitées le jour même."
+        },
+        {
+          "type": "list",
+          "title": "Pour aller plus vite",
+          "intro": "Précisez dans votre message :",
+          "items": [
+            "votre nom et votre classe ou service",
+            "les produits et les quantités souhaitées",
+            "la date à laquelle vous en avez besoin"
+          ]
         }
       ]
     },
@@ -93,10 +230,43 @@
       "in_menu": false,
       "sections": [
         {
+          "type": "list",
+          "title": "Éditeur du site",
+          "items": [
+            "Nom de l'établissement : [NOM DE L'ÉTABLISSEMENT]",
+            "Adresse : [ADRESSE]",
+            "Directeur de la publication : [NOM DU CHEF D'ÉTABLISSEMENT]",
+            "Contact : [EMAIL DU MAGASIN]"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Hébergement",
+          "items": [
+            "Hébergeur : [NOM DE L'HÉBERGEUR]",
+            "Adresse : [ADRESSE DE L'HÉBERGEUR]"
+          ]
+        },
+        {
           "type": "text",
-          "title": "Mentions légales",
+          "title": "Objet du site",
           "paragraphs": [
-            "Éditeur du site, hébergeur, directeur de publication, traitement des données personnelles."
+            "Ce site présente le magasin pédagogique de l'établissement. Il est réalisé et mis à jour par les étudiants de BTS NDRC dans le cadre de leur formation, sous la responsabilité de l'équipe pédagogique. Il ne permet ni la vente ni le paiement en ligne."
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Propriété intellectuelle",
+          "paragraphs": [
+            "Les textes et les visuels de ce site sont produits par les étudiants de la section, sauf mention contraire. Toute reproduction en dehors d'un usage pédagogique interne requiert l'accord préalable de l'établissement."
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Données personnelles",
+          "paragraphs": [
+            "Les informations transmises via le formulaire de contact servent uniquement à répondre à votre demande. Elles ne sont ni cédées ni utilisées à d'autres fins, et sont supprimées à la fin de l'année scolaire.",
+            "Conformément au règlement général sur la protection des données, vous pouvez demander l'accès, la rectification ou la suppression des informations vous concernant en écrivant à [EMAIL DU MAGASIN]."
           ]
         }
       ]
