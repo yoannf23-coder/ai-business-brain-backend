@@ -15,27 +15,46 @@ Il pilote un WordPress **déjà installé et accessible en ligne**, via l'API RE
 Le script est **idempotent** : relancé, il met à jour les pages existantes (repérées
 par leur `slug`) au lieu d'en créer des doublons.
 
-## Installation
+## Démarrage rapide (depuis ton PC)
 
-Aucune dépendance : Python 3.8+ suffit.
+Il faut Python 3.8+ (`python3 --version` pour vérifier ; sous Windows, `py --version`).
 
 ```bash
-cp .env.example .env
-# puis remplir .env
+git clone https://github.com/yoannf23-coder/ai-business-brain-backend.git
+cd ai-business-brain-backend
+cp .env.example .env      # Windows : copy .env.example .env
 ```
 
-### Obtenir un mot de passe d'application
+Ouvre `.env` et remplis-le, puis :
 
-Dans l'admin WordPress : **Utilisateurs → Profil → Mots de passe d'application**.
-Donner un nom (ex. `wp-builder`), cliquer sur « Ajouter », copier la clé affichée.
+```bash
+python3 build_site.py check    # doit afficher "Connecté : ..."
+```
 
-- Utiliser un compte **administrateur** (droits requis pour les menus et réglages).
-- Ne jamais mettre son mot de passe de connexion : uniquement le mot de passe d'application.
-- Le supprimer depuis cette même page une fois le travail terminé.
-- `.env` est ignoré par git, les identifiants ne sont jamais committés.
+## Authentification
 
-Si les mots de passe d'application n'apparaissent pas, c'est que le site n'est pas
-en HTTPS (WordPress les masque en HTTP).
+Deux méthodes, au choix dans `.env`.
+
+### Mot de passe d'application (recommandé)
+
+Admin WordPress → **Utilisateurs → Profil → Mots de passe d'application**.
+Donner un nom (ex. `wp-builder`), cliquer sur « Ajouter », copier la clé dans
+`WP_APP_PASSWORD`. À supprimer depuis cette même page une fois le travail fini.
+
+La section n'apparaît que si le site est en **HTTPS** : WordPress la masque sinon.
+
+### Mot de passe de connexion normal
+
+Si les mots de passe d'application ne sont pas disponibles, remplir `WP_PASSWORD`
+et laisser `WP_APP_PASSWORD` vide. Le script se connecte alors via
+`wp-login.php`, garde les cookies de session et récupère le nonce REST
+(`admin-ajax.php?action=rest-nonce`) — exactement la mécanique du navigateur.
+WordPress refuse le mot de passe de connexion en Basic Auth, d'où ce détour.
+
+### Dans les deux cas
+
+- Utiliser un compte **administrateur** : les menus et les réglages l'exigent.
+- `.env` est ignoré par git ; les identifiants ne sont jamais committés.
 
 ## Utilisation
 

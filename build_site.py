@@ -7,7 +7,8 @@ Usage :
     python3 build_site.py apply              # crée/met à jour pages, menu et réglages
     python3 build_site.py apply --dry-run    # montre ce qui serait fait
 
-Identifiants lus depuis .env ou l'environnement : WP_URL, WP_USER, WP_APP_PASSWORD.
+Identifiants lus depuis .env ou l'environnement : WP_URL, WP_USER, et
+WP_APP_PASSWORD (recommandé) ou WP_PASSWORD.
 Le script est idempotent : relancé, il met à jour au lieu de dupliquer.
 """
 
@@ -47,6 +48,7 @@ def cmd_check(_args, config):
     user = client.me()
     caps = user.get("capabilities", {})
     print(f"Connecté : {user['name']} (id {user['id']}) sur {client.base}")
+    print(f"Méthode : {client.auth_mode}")
     for cap, label in (
         ("edit_pages", "créer/modifier des pages"),
         ("manage_options", "modifier les réglages du site"),
@@ -161,7 +163,7 @@ def main():
     except WPError as exc:
         print(f"Erreur WordPress : {exc}", file=sys.stderr)
         if exc.status in (401, 403):
-            print("Vérifie WP_USER et le mot de passe d'application.", file=sys.stderr)
+            print("Vérifie WP_USER et le mot de passe dans .env.", file=sys.stderr)
         return 1
 
 
