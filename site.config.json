@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Le Comptoir NDRC",
-    "description": "Le magasin pédagogique tenu par les étudiants de BTS NDRC",
+    "description": "Le magasin pédagogique du lycée Jean Monnet, tenu par les étudiants de BTS NDRC",
     "front_page_slug": "accueil",
     "posts_page_slug": null
   },
@@ -25,7 +25,7 @@
           "type": "text",
           "title": "Une boutique qui sert de salle de cours",
           "paragraphs": [
-            "Le Comptoir est le magasin pédagogique de [NOM DE L'ÉTABLISSEMENT]. Il est ouvert à tous les élèves, étudiants et personnels, et il fonctionne comme n'importe quel commerce : un assortiment, des prix, une caisse, des stocks à surveiller et des clients à satisfaire.",
+            "Le Comptoir est le magasin pédagogique du lycée polyvalent Jean Monnet, à La Queue-lez-Yvelines. Il est ouvert à tous les élèves, étudiants et personnels de l'établissement, et il fonctionne comme n'importe quel commerce : un assortiment, des prix, une caisse, des stocks à surveiller et des clients à satisfaire.",
             "La différence tient à qui se trouve derrière le comptoir. Chaque ouverture est assurée par les étudiants de BTS Négociation et Digitalisation de la Relation Client, qui y appliquent en conditions réelles ce qu'ils étudient en cours : choisir les produits, négocier avec les fournisseurs, organiser le rayon, conseiller, encaisser et analyser les ventes."
           ]
         },
@@ -122,7 +122,7 @@
           "title": "Apprendre le commerce en le pratiquant",
           "paragraphs": [
             "Un magasin pédagogique est un commerce réel installé dans un établissement scolaire et confié aux étudiants. Ici, rien n'est simulé : les fournisseurs sont de vrais fournisseurs, les stocks de vrais stocks, et un rayon mal achalandé se traduit immédiatement par une vente perdue.",
-            "Le Comptoir prolonge les enseignements du BTS NDRC. Ce que les étudiants travaillent en atelier — la relation client, la négociation, l'animation commerciale, l'exploitation des données de vente — se joue chaque semaine derrière le comptoir, devant des clients qui ne sont pas des camarades jouant un rôle."
+            "Jean Monnet est labellisé lycée des métiers de la vente et de la gestion : le commerce n'y est pas une matière parmi d'autres, c'est la spécialité de la maison. Le Comptoir prolonge logiquement les enseignements du BTS NDRC. Ce que les étudiants travaillent en atelier — la relation client, la négociation, l'animation commerciale, l'exploitation des données de vente — se joue chaque semaine derrière le comptoir, devant des clients qui ne sont pas des camarades jouant un rôle."
           ]
         },
         {
@@ -162,8 +162,8 @@
           "title": "Nous trouver",
           "intro": "Le magasin se situe à l'intérieur de l'établissement et n'est accessible qu'aux personnes autorisées à y entrer.",
           "items": [
-            "Adresse : [ADRESSE DE L'ÉTABLISSEMENT]",
-            "Emplacement : [BÂTIMENT / SALLE]",
+            "Lycée polyvalent Jean Monnet, 1 place de l'Europe, 78940 La Queue-lez-Yvelines",
+            "Emplacement dans l'établissement : [BÂTIMENT / SALLE]",
             "Accès : réservé aux élèves, étudiants et personnels de l'établissement"
           ]
         },
@@ -208,8 +208,8 @@
         {
           "type": "contact",
           "email": "[EMAIL DU MAGASIN]",
-          "phone": "[TÉLÉPHONE — facultatif]",
-          "address": "[ADRESSE DE L'ÉTABLISSEMENT]",
+          "phone": "01 34 86 66 70 (standard du lycée)",
+          "address": "1 place de l'Europe, 78940 La Queue-lez-Yvelines",
           "note": "Le plus simple reste de passer nous voir directement pendant les heures d'ouverture : les demandes formulées en magasin sont traitées le jour même."
         },
         {
@@ -233,9 +233,11 @@
           "type": "list",
           "title": "Éditeur du site",
           "items": [
-            "Nom de l'établissement : [NOM DE L'ÉTABLISSEMENT]",
-            "Adresse : [ADRESSE]",
-            "Directeur de la publication : [NOM DU CHEF D'ÉTABLISSEMENT]",
+            "Lycée polyvalent Jean Monnet, lycée des métiers de la vente et de la gestion",
+            "1 place de l'Europe, 78940 La Queue-lez-Yvelines",
+            "Téléphone : 01 34 86 66 70",
+            "Numéro UAI : 0781839A — académie de Versailles",
+            "Directeur de la publication : [NOM DU PROVISEUR]",
             "Contact : [EMAIL DU MAGASIN]"
           ]
         },
@@ -243,8 +245,8 @@
           "type": "list",
           "title": "Hébergement",
           "items": [
-            "Hébergeur : [NOM DE L'HÉBERGEUR]",
-            "Adresse : [ADRESSE DE L'HÉBERGEUR]"
+            "Ce site est hébergé sur la plateforme pédagogique btsndrc.ac, mise à disposition des sections BTS NDRC",
+            "Raison sociale et adresse de l'hébergeur : [À DEMANDER À L'ENSEIGNANT RESPONSABLE]"
           ]
         },
         {
