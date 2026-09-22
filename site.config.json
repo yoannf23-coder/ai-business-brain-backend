@@ -1,0 +1,105 @@
+{
+  "site": {
+    "title": "Nom de l'entreprise",
+    "description": "Votre slogan en une ligne",
+    "front_page_slug": "accueil",
+    "posts_page_slug": null
+  },
+  "menu": {
+    "name": "Menu principal",
+    "location": "primary",
+    "items": ["accueil", "services", "a-propos", "contact"]
+  },
+  "pages": [
+    {
+      "slug": "accueil",
+      "title": "Accueil",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Nom de l'entreprise",
+          "subtitle": "Ce que vous faites, pour qui, et pourquoi ça compte — en une phrase.",
+          "button": { "label": "Nous contacter", "url": "/contact" }
+        },
+        {
+          "type": "features",
+          "title": "Ce que nous faisons",
+          "items": [
+            { "title": "Service 1", "text": "Décrivez le bénéfice concret pour le client." },
+            { "title": "Service 2", "text": "Décrivez le bénéfice concret pour le client." },
+            { "title": "Service 3", "text": "Décrivez le bénéfice concret pour le client." }
+          ]
+        },
+        {
+          "type": "cta",
+          "title": "Parlons de votre projet",
+          "text": "Réponse sous 24 h, sans engagement.",
+          "button": { "label": "Demander un devis", "url": "/contact" }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "title": "Services",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Nos prestations",
+          "paragraphs": [
+            "Présentez ici votre offre, la méthode de travail et ce qui vous différencie."
+          ]
+        },
+        {
+          "type": "features",
+          "items": [
+            { "title": "Prestation A", "text": "Ce que ça inclut, pour quel type de client." },
+            { "title": "Prestation B", "text": "Ce que ça inclut, pour quel type de client." },
+            { "title": "Prestation C", "text": "Ce que ça inclut, pour quel type de client." }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "title": "À propos",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Qui sommes-nous",
+          "paragraphs": [
+            "L'histoire de l'entreprise, sa mission, les personnes derrière.",
+            "Ajoutez ici les chiffres clés, années d'expérience, références."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "title": "Contact",
+      "sections": [
+        {
+          "type": "contact",
+          "title": "Nous écrire",
+          "email": "contact@example.com",
+          "phone": "+33 0 00 00 00 00",
+          "address": "Adresse, Code postal Ville",
+          "note": "Vous pouvez aussi remplir le formulaire ci-dessous."
+        }
+      ]
+    },
+    {
+      "slug": "mentions-legales",
+      "title": "Mentions légales",
+      "in_menu": false,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Mentions légales",
+          "paragraphs": [
+            "Éditeur du site, hébergeur, directeur de publication, traitement des données personnelles."
+          ]
+        }
+      ]
+    }
+  ]
+}
